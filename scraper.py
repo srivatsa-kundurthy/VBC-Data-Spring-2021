@@ -38,7 +38,7 @@ if __name__ == "__main__":
     creds = open('IGNORE_CREDS.txt', 'r').read().split()
 
 
-    driver.get('https://challenge.knowledgematters.com/course/view/497010')
+    driver.get(creds[2])
     username = driver.find_elements_by_css_selector('div input')[1]
     sleep(1)
     username.send_keys(creds[0])
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     password.send_keys(creds[1] + Keys.ENTER)
 
     sleep(2)
-    driver.get('https://challenge.knowledgematters.com/sim/load/1209090#')
+    driver.get(creds[3])
 
     sleep(3)
     popup = driver.find_element_by_xpath('/html/body/div[6]/div[3]/div/button')
