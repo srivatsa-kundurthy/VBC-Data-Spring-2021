@@ -1,0 +1,22 @@
+Assembler
+Builder
+Finisher
+Welder
+Sys Admin
+AR
+AP
+Purchaser
+Handler
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+Nov
+Dec
+Salary
