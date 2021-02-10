@@ -21,6 +21,8 @@ def clicker(l):
         resume = driver.find_element_by_xpath('//*[@id="resume"]')
         t = resume.text
         data = t.split('\n')
+        data.append(i)
+
 
         with open(l[1], 'a') as file:
             write = csv.writer(file)
