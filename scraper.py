@@ -21,6 +21,7 @@ def clicker(l):
         resume = driver.find_element_by_xpath('//*[@id="resume"]')
         t = resume.text
         data = t.split('\n')
+        print(i)
         data.append(i)
 
 
@@ -54,7 +55,7 @@ if __name__ == "__main__":
     sleep(2)
     driver.get(creds[3])
 
-    sleep(3)
+    sleep(10)
     popup = driver.find_element_by_xpath('/html/body/div[6]/div[3]/div/button')
     popup.click()
 
@@ -67,10 +68,11 @@ if __name__ == "__main__":
     hire = driver.find_element_by_xpath('//*[@id="hireEmployees"]')
     hire.click()
 
-    sleep(1)
+    print('PLEASE CLICK INTENDED JOB TYPE.')
+    sleep(10)
 
     #TODO: Ensure file names are correct
-    assembler = [499, 'full_assemblers.csv', 0]
+    assembler = [499, 'full_wheel_builders.csv', 0]
     wheel_builder = [836, 'full_wheel_builders.csv', 1]
     finisher = [434, 'full_finishers.csv', 2]
     frame_welder = [842, 'full_frame_welders.csv', 3]
@@ -80,7 +82,7 @@ if __name__ == "__main__":
     purchaser = [677, 'full_purchasers.csv', 7]
     material_handler = [293, 'full_material_handlers.csv', 8]
 
-    clicker(assembler)
+    clicker(frame_welder)
 
     driver.close()
 

@@ -24,7 +24,9 @@ def cleaner(l):
     for entry in l:
         s = ''.join(elem for elem in entry if not isChar(elem))
         cleaned.append(s)
+
     del cleaned[0]
+    del cleaned[-1]
 
     for entry in cleaned:
         if not isBlacklisted(entry):
